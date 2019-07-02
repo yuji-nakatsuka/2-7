@@ -1,0 +1,55 @@
+ /* ブラウザがそれぞれ持っているCSSをリセットするため */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:#6c6b6b;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main {
+	width:960px;
+	margin:0 auto;
+}
+
+ul {
+	padding:50px 0;
+	list-style: none
+}
+
+ul li:nth-child(odd){
+	background-color: lightgray;
+
+}
+
+li {
+	padding:20px;
+	font-family: sans-serif;
+}
+
+
+.box:nth-child(1), .box:nth-child(2){
+	margin-right:5%;
+}
+
+.box {
+	width:30%;
+	height:200px;
+	background-color: yellow;
+	float:left;
+}
+
+.one , .two{
+	margin-bottom: 40px
+}
+
+
+
+.one .box:nth-child(1),.two .box:nth-child(2),.three .box:nth-child(3){
+	background-color: orange
+}
